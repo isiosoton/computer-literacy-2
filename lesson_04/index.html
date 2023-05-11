@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="img, audio, video" />
+    <!-- タイトル -->
+    <title>第4回</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTMLの講義</h1>
+      <nav>ホーム タグリファレンス 問い合わせ</nav>
+    </header>
+    <div>
+      <h2>画像の埋め込み</h2>
+      <!-- src属性：ファイルの場所　(相対パスで指定) -->
+      <!-- alt属性：画像ファイルを説明するテキスト -->
+      <!-- width属性：画像ファイルの表示サイズ指定　(横幅) -->
+      <img src="media/peppers.jpg" alt="peppers" width="300" />
+      <img src="media/animation.gif" alt="animation" width="300" />
+      <p>画像ファイルにはいくつかの種類(拡張子)があります。</p>
+      <dl>
+        <dt>jpg, jpeg</dt>
+        <dt>じぇいぺぐ</dt>
+        <dd>一般的な画像形式、圧縮率に優れる。1670万色使える。 非可逆圧縮タイプなので、一度低解像度で保存すると元の画質には戻せない。</dd>
+        <dt>png</dt>
+        <dt>ぴんぐ、ぴん</dt>
+        <dd>可逆圧縮方式なので、画質を変更しても元に戻すことができる。透過処理が使える。jpgと比べるとファイルサイズが大きくなる。</dd>
+        <dt>gif</dt>
+        <dt>じふ、ぎふ</dt>
+        <dd>256色使える。ぱらぱら漫画のよう表現ができる。</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>動画の埋め込み</h2>
+      <!-- 手元にある動画を埋め込む -->
+      <video src="media/animation_AdobeExpress.mp4" height="400" controls></video>
+
+      <video src="media/LETs!.mp4" height="400" controls autoplay="true">
+        <source src="media/animation_AdobeExpress.mp4" />
+        <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+      </video>
+
+      <!-- YouTubeの埋め込み -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DXT9dF-WK-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div>
+      <h2>音声、音楽の埋め込み</h2>
+      <audio src="media/rc_media.mp3" controls></audio>
+    </div>
+  </body>
+</html>
