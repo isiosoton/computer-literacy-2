@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!-- タイトル -->
+    <title>第1回 課題</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTMLの講義</h1>
+      <nav>
+        <a href="home.html">ホーム</a>
+        <a href="tags.html">タグリファレンス</a>
+        <a href="inquiry.html">お問い合わせ</a>
+      </nav>
+    </header>
+    <div>
+      <h2>お問い合わせ</h2>
+      <form action="post.html" method="post">
+        <div>
+          <div><label for="name">お名前</label></div>
+          <div><input type="text" name="name" id="name" /></div>
+        </div>
+        <div>
+          <div><label for="email">メールアドレス</label></div>
+          <div><input type="email" name="email" id="email" /></div>
+        </div>
+        <div>
+          <div><label for="inquiry">お問い合わせ内容</label></div>
+          <div><textarea name="inquiry" id="inquiry" cols="30" rows="10"></textarea></div>
+        </div>
+        <div>
+          <input type="submit" value="送信" />
+        </div>
+      </form>
+    </div>
+    <footer>Copy right &copy; Kameoka, ALL Rights Reseved.</footer>
+  </body>
+</html>
