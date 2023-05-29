@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!-- タイトル -->
+    <title>第5回 ハイパーリンク</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1>HTMLの講義</h1>
+      <nav>ホーム タグリファレンス 問い合わせ</nav>
+    </header>
+    <div>
+      <h2>ハイパーリンク</h2>
+      <div>
+        <h3>外部リンク (外部サーバーにあるページ)</h3>
+        <ul>
+          <!-- 同一タブでリンクを開く -->
+          <li><a href="https://www.soka.ac.jp/" target="_self">創価大学HPへのリンク</a></li>
+          <!-- 別タブでリンクを開く -->
+          <li><a href="https://www.soka.ac.jp/" target="_blank">創価大学HPへのリンク(別タブ)</a></li>
+        </ul>
+        <h3>外部リンク (同一サーバー上にあるページ)</h3>
+        <ul>
+          <li><a href="../lesson_02/index.html">第2回</a></li>
+          <li><a href="../lesson_03/index.html">第3回</a></li>
+          <li><a href="../lesson_04/index.html">第4回</a></li>
+        </ul>
+        <h3>内部リンク (ページ内リンク)</h3>
+
+        <a href="#hogehoge">画像の下まで飛ぶよ</a>
+        <!-- ページを縦長にするための要素 -->
+        <img src="../lesson_04/media/earth.jpg" height="3000" alt="地球の画像" />
+
+        <!-- id属性で要素に名前を付ける -->
+        <p id="hogehoge">ここまで飛ぶよ</p>
+        <a href="#top">ページの上まで飛ぶよ</a>
+      </div>
+    </div>
+  </body>
+</html>

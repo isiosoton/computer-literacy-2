@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!-- タイトル -->
+    <title>第1回 課題</title>
+  </head>
+  <body>
+    <header>
+      <h2>HTMLノート</h2>
+      <nav>
+        <a href="home.html">ホーム</a>
+        <a href="tags.html">タグリファレンス</a>
+        <a href="inquiry.html">お問い合わせ</a>
+      </nav>
+    </header>
+    <div>
+      <p>架空の授業で扱ったタグ一覧の説明を書いたノートです。</p>
+      <ul>
+        <li>
+          <h3>第2回授業</h3>
+          <ul>
+            <li>
+              <h4>!DOCTYPEタグ</h4>
+              <p>HTMLのバージョンを指定するタグです。HTML5では以下のように記述します。</p>
+              <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+            </li>
+            <li>
+              <h4>htmlタグ</h4>
+              <p>HTMLのルート要素です。以下のように記述します。</p>
+              <pre><code>&lt;html&gt;
+  &lt;head&gt;               
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </li>
+            <li>
+              <h4>headタグ</h4>
+              <p>HTMLのヘッダー要素です。以下のように記述します。</p>
+              <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+  &lt;meta name="auther" content="Kameoka Kentaro" /&gt;
+  &lt;meta name="keywords" content="HTML, CSS, JavaScript" /&gt;
+  &lt;title&gt;第1回 課題&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+            </li>
+            <li>
+              <h4>metaタグ</h4>
+              <p>HTMLのメタデータを記述するタグです。以下のように記述します。</p>
+              <pre><code>&lt;meta charset="UTF-8" /&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bodyタグ</h4>
+              <p>HTMLのボディー要素です。以下のように記述します。</p>
+              <pre><code>&lt;body&gt;
+  &lt;header&gt;
+
+  &lt;/header&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+            </li>
+            <li>
+              <h4>headerタグ</h4>
+              <p>HTMLのヘッダー要素です。以下のように記述します。</p>
+              <pre><code>&lt;header&gt;
+  &lt;h1&gt;HTMLノート&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="home.html"&gt;ホーム&lt;/a&gt;
+    &lt;a href="tags.html"&gt;タグリファレンス&lt;/a&gt;
+    &lt;a href="inquiry.html"&gt;お問い合わせ&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+            </li>
+            <li>
+              <h4>navタグ</h4>
+              <p>HTMLのナビゲーション要素です。以下のように記述します。</p>
+              <pre><code>&lt;nav&gt;
+  &lt;a href="home.html"&gt;ホーム&lt;/a&gt;
+  &lt;a href="tags.html"&gt;タグリファレンス&lt;/a&gt;
+  &lt;a href="inquiry.html"&gt;お問い合わせ&lt;/a&gt;
+
+&lt;/nav&gt;</code></pre>
+            </li>
+            <li>
+              <h4>divタグ</h4>
+              <p>HTMLのブロック要素です。以下のように記述します。</p>
+              <pre><code>&lt;div&gt;&lt;/div&gt;</code></pre>
+            </li>
+            <li>
+              <h4>footerタグ</h4>
+              <p>HTMLのフッター要素です。以下のように記述します。</p>
+              <pre><code>&lt;footer&gt;Copy right &copy; Kameoka, ALL Rights Reseved.&lt;/footer&gt;</code></pre>
+            </li>
+            <li>
+              <h4>h1タグ</h4>
+              <p>HTMLの見出し要素です。以下のように記述します。</p>
+              <pre><code>&lt;h1&gt;HTMLノート&lt;/h1&gt;</code></pre>
+            </li>
+            <li>
+              <h4>h2タグ</h4>
+              <p>HTMLの見出し要素です。以下のように記述します。</p>
+              <pre><code>&lt;h2&gt;第1回 課題&lt;/h2&gt;</code></pre>
+            </li>
+            <li>
+              <h4>h3タグ</h4>
+              <p>HTMLの見出し要素です。以下のように記述します。</p>
+              <pre><code>&lt;h3&gt;第2回授業&lt;/h3&gt;</code></pre>
+              <h3>第2回授業</h3>
+            </li>
+            <li>
+              <h4>h4タグ</h4>
+              <p>HTMLの見出し要素です。以下のように記述します。</p>
+              <pre><code>&lt;h4&gt;h4タグ&lt;/h4&gt;</code></pre>
+              <h4>h4タグ</h4>
+            </li>
+            <li>
+              <h4>h5タグ</h4>
+              <p>HTMLの見出し要素です。以下のように記述します。</p>
+              <pre><code>&lt;h5&gt;h5タグ&lt;/h5&gt;</code></pre>
+              <h5>h5タグ</h5>
+            </li>
+            <li>
+              <h4>h6タグ</h4>
+              <p>HTMLの見出し要素です。以下のように記述します。</p>
+              <pre><code>&lt;h6&gt;h6タグ&lt;/h6&gt;</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>第3回授業</h3>
+          <ul>
+            <li>
+              <h4>ulタグ</h4>
+              <p>HTMLのリスト要素です。以下のように記述します。</p>
+              <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+              </code></pre>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </li>
+            <li>
+              <h4>olタグ</h4>
+              <p>HTMLのリスト要素です。以下のように記述します。</p>
+              <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+              </code></pre>
+              <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ol>
+            </li>
+            <li>
+              <h4>liタグ</h4>
+              <p>HTMLのリスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;li&gt;HTML&lt;/li&gt;</code></pre>
+            </li>
+            <li>
+              <h4>tableタグ</h4>
+              <p>HTMLのテーブル要素です。以下のように記述します。</p>
+              <pre><code>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;商品名&lt;/th&gt;
+      &lt;th&gt;価格&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;りんご&lt;/td&gt;
+      &lt;td&gt;100円&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;みかん&lt;/td&gt;
+      &lt;td&gt;80円&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;/table&gt;
+            </code></pre>
+              <table>
+                <thead>
+                  <tr>
+                    <th>商品名</th>
+                    <th>価格</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>りんご</td>
+                    <td>100円</td>
+                  </tr>
+                  <tr>
+                    <td>みかん</td>
+                    <td>80円</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <h4>theadタグ</h4>
+              <p>HTMLのテーブル要素です。以下のように記述します。</p>
+              <pre><code>&lt;thead&gt;&lt;/thead&gt;</code></pre>
+            </li>
+            <li>
+              <h4>tbodyタグ</h4>
+              <p>HTMLのテーブル要素です。以下のように記述します。</p>
+              <pre><code>&lt;tbody&gt;&lt;/tbody&gt;</code></pre>
+            </li>
+            <li>
+              <h4>trタグ</h4>
+              <p>HTMLのテーブル要素です。以下のように記述します。</p>
+              <pre><code>&lt;tr&gt;&lt;/tr&gt;</code></pre>
+            </li>
+            <li>
+              <h4>thタグ</h4>
+              <p>HTMLのテーブル要素です。以下のように記述します。</p>
+              <pre><code>&lt;th&gt;商品名&lt;/th&gt;</code></pre>
+            </li>
+            <li>
+              <h4>tdタグ</h4>
+              <p>HTMLのテーブル要素です。以下のように記述します。</p>
+              <pre><code>&lt;td&gt;りんご&lt;/td&gt;</code></pre>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>第4回授業</h3>
+          <ul>
+            <li>
+              <h4>imgタグ</h4>
+              <p>HTMLの画像要素です。以下のように記述します。</p>
+              <pre><code>&lt;img src="img/pc.jpg" alt="パソコン"&gt;</code></pre>
+            </li>
+            <li>
+              <h4>formタグ</h4>
+              <p>HTMLのフォーム要素です。以下のように記述します。</p>
+              <pre><code>
+&lt;form&gt;
+  &lt;label&gt;名前&lt;/label&gt;
+  &lt;input type="text" name="name"&gt;
+  &lt;label&gt;メールアドレス&lt;/label&gt;
+  &lt;input type="email" name="email"&gt;
+  &lt;button type="submit"&gt;送信&lt;/button&gt;
+&lt;/form&gt;
+              </code></pre>
+              <form>
+                <label>名前</label>
+                <input type="text" name="name" />
+                <label>メールアドレス</label>
+                <input type="email" name="email" />
+                <button type="submit">送信</button>
+              </form>
+            </li>
+            <li>
+              <h4>labelタグ</h4>
+              <p>HTMLのフォーム要素です。以下のように記述します。</p>
+              <pre><code>&lt;label&gt;名前&lt;/label&gt;</code></pre>
+              <label>名前</label>
+            </li>
+            <li>
+              <h4>inputタグ</h4>
+              <p>HTMLのフォーム要素です。以下のように記述します。</p>
+              <pre><code>&lt;input type="text" name="name"&gt;</code></pre>
+              <input type="text" name="name" />
+            </li>
+            <li>
+              <h4>buttonタグ</h4>
+              <p>HTMLのフォーム要素です。以下のように記述します。</p>
+              <pre><code>&lt;button type="submit"&gt;送信&lt;/button&gt;</code></pre>
+              <button type="submit">送信</button>
+            </li>
+            <li>
+              <h4>spanタグ</h4>
+              <p>HTMLのコンテナ要素です。以下のように記述します。</p>
+              <pre><code>&lt;span&gt;コンテンツ&lt;/span&gt;</code></pre>
+              <span>コンテンツ</span>
+            </li>
+            <li>
+              <h4>pタグ</h4>
+              <p>HTMLのコンテナ要素です。以下のように記述します。</p>
+              <pre><code>&lt;p&gt;コンテンツ&lt;/p&gt;</code></pre>
+              <p>コンテンツ</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>第5回授業</h3>
+          <ul>
+            <li>
+              <h4>aタグ</h4>
+              <p>HTMLのリンク要素です。以下のように記述します。</p>
+              <pre><code>&lt;a href="https://www.google.co.jp/"&gt;Google&lt;/a&gt;</code></pre>
+              <a href="https://www.google.co.jp/">Google</a>
+            </li>
+          </ul>
+        </li>
+        <!-- ここからはありそうでなさそうなHTMLタグを紹介する -->
+        <li>
+          <h3>第0回授業</h3>
+          <ul>
+            <li>
+              <h4>linkタグ</h4>
+              <p>HTMLのリンク要素です。以下のように記述します。</p>
+              <pre><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;</code></pre>
+            </li>
+            <li>
+              <h4>styleタグ</h4>
+              <p>HTMLのスタイル要素です。以下のように記述します。</p>
+              <pre><code>&lt;style type="text/css"&gt;body{background-color:#eee;}&lt;/style&gt;</code></pre>
+            </li>
+            <li>
+              <h4>scriptタグ</h4>
+              <p>HTMLのスクリプト要素です。以下のように記述します。</p>
+              <pre><code>&lt;script src="js/script.js"&gt;&lt;/script&gt;</code></pre>
+            </li>
+            <li>
+              <h4>noscriptタグ</h4>
+              <p>HTMLのスクリプト要素です。以下のように記述します。</p>
+              <pre><code>&lt;noscript&gt;JavaScriptが無効です。&lt;/noscript&gt;</code></pre>
+            </li>
+            <li>
+              <h4>metaタグ</h4>
+              <p>HTMLのメタ要素です。以下のように記述します。</p>
+              <pre><code>&lt;meta charset="utf-8"&gt;</code></pre>
+            </li>
+            <li>
+              <h4>iframeタグ</h4>
+              <p>HTMLのインラインフレーム要素です。以下のように記述します。</p>
+              <pre><code>&lt;iframe src="https://www.google.co.jp/"&gt;&lt;/iframe&gt;</code></pre>
+            </li>
+            <li>
+              <h4>abbrタグ</h4>
+              <p>HTMLの略語要素です。以下のように記述します。</p>
+              <pre><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
+            </li>
+            <li>
+              <h4>addressタグ</h4>
+              <p>HTMLのアドレス要素です。以下のように記述します。</p>
+              <pre><code>&lt;address&gt;〒100-0000 東京都千代田区&lt;/address&gt;</code></pre>
+            </li>
+            <li>
+              <h4>areaタグ</h4>
+              <p>HTMLのアスタリスク要素です。以下のように記述します。</p>
+              <pre><code>&lt;area shape="rect" coords="0,0,100,100" href="https://www.google.co.jp/"&gt;</code></pre>
+            </li>
+            <li>
+              <h4>articleタグ</h4>
+              <p>HTMLの記事要素です。以下のように記述します。</p>
+              <pre><code>&lt;article&gt;記事&lt;/article&gt;</code></pre>
+            </li>
+            <li>
+              <h4>asideタグ</h4>
+              <p>HTMLのサイドバー要素です。以下のように記述します。</p>
+              <pre><code>&lt;aside&gt;サイドバー&lt;/aside&gt;</code></pre>
+            </li>
+            <li>
+              <h4>audioタグ</h4>
+              <p>HTMLの音声要素です。以下のように記述します。</p>
+              <pre><code>&lt;audio src="audio/sample.mp3"&gt;&lt;/audio&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bタグ</h4>
+              <p>HTMLの強調要素です。以下のように記述します。</p>
+              <pre><code>&lt;b&gt;強調&lt;/b&gt;</code></pre>
+            </li>
+            <li>
+              <h4>baseタグ</h4>
+              <p>HTMLのベース要素です。以下のように記述します。</p>
+              <pre><code>&lt;base href="https://www.google.co.jp/"&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bdiタグ</h4>
+              <p>HTMLの双方向分離要素です。以下のように記述します。</p>
+              <pre><code>&lt;bdi&gt;双方向分離&lt;/bdi&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bdoタグ</h4>
+              <p>HTMLの双方向書式化要素です。以下のように記述します。</p>
+              <pre><code>&lt;bdo dir="rtl"&gt;双方向書式化&lt;/bdo&gt;</code></pre>
+            </li>
+            <li>
+              <h4>blockquoteタグ</h4>
+              <p>HTMLの引用要素です。以下のように記述します。</p>
+              <pre><code>&lt;blockquote cite="https://www.google.co.jp/"&gt;引用&lt;/blockquote&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bodyタグ</h4>
+              <p>HTMLのボディ要素です。以下のように記述します。</p>
+              <pre><code>&lt;body&gt;ボディ&lt;/body&gt;</code></pre>
+            </li>
+            <li>
+              <h4>brタグ</h4>
+              <p>HTMLの改行要素です。以下のように記述します。</p>
+              <pre><code>改行&lt;br&gt;改行</code></pre>
+            </li>
+            <li>
+              <h4>bタグ</h4>
+              <p>HTMLの強調要素です。以下のように記述します。</p>
+              <pre><code>&lt;b&gt;強調&lt;/b&gt;</code></pre>
+            </li>
+            <li>
+              <h4>baseタグ</h4>
+              <p>HTMLのベース要素です。以下のように記述します。</p>
+              <pre><code>&lt;base href="https://www.google.co.jp/"&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bdiタグ</h4>
+              <p>HTMLの双方向分離要素です。以下のように記述します。</p>
+              <pre><code>&lt;bdi&gt;双方向分離&lt;/bdi&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bdoタグ</h4>
+              <p>HTMLの双方向書式化要素です。以下のように記述します。</p>
+              <pre><code>&lt;bdo dir="rtl"&gt;双方向書式化&lt;/bdo&gt;</code></pre>
+            </li>
+            <li>
+              <h4>blockquoteタグ</h4>
+              <p>HTMLの引用要素です。以下のように記述します。</p>
+              <pre><code>&lt;blockquote cite="https://www.google.co.jp/"&gt;引用&lt;/blockquote&gt;</code></pre>
+            </li>
+            <li>
+              <h4>bodyタグ</h4>
+              <p>HTMLのボディ要素です。以下のように記述します。</p>
+              <pre><code>&lt;body&gt;ボディ&lt;/body&gt;</code></pre>
+            </li>
+            <li>
+              <h4>brタグ</h4>
+              <p>HTMLの改行要素です。以下のように記述します。</p>
+              <pre><code>改行&lt;br&gt;改行</code></pre>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <footer>Copy right &copy; Kameoka, ALL Rights Reseved.</footer>
+  </body>
+</html>

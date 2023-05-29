@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!-- タイトル -->
+    <title>第1回 課題</title>
+  </head>
+  <body>
+    <header>
+      <h2>HTMLの講義</h2>
+      <nav>
+        <a href="home.html">ホーム</a>
+        <a href="tags.html">タグリファレンス</a>
+        <a href="inquiry.html">お問い合わせ</a>
+      </nav>
+    </header>
+    <div>
+      <p>架空の授業で扱ったタグ一覧の説明を書いたノートです。</p>
+      <ul>
+        <li>
+          <h3>第0回授業</h3>
+          <ul>
+            <!-- 架空のHTMLタグを記述し説明する -->
+            <li>
+              <h4 id="#blockquote">blockquoteタグ</h4>
+              <p>HTMLの引用要素です。以下のように記述します。</p>
+              <pre><code>&lt;blockquote cite="https://www.google.co.jp/"&gt;引用&lt;/blockquote&gt;</code></pre>
+              <blockquote cite="https://www.google.co.jp/">引用</blockquote>
+            </li>
+            <li>
+              <h4 id="#cite">citeタグ</h4>
+              <p>HTMLの引用要素です。以下のように記述します。</p>
+              <pre><code>&lt;cite&gt;引用元&lt;/cite&gt;</code></pre>
+              <cite>引用元</cite>
+            </li>
+            <li>
+              <h4 id="#code">codeタグ</h4>
+              <p>HTMLのコード要素です。以下のように記述します。</p>
+              <pre><code>&lt;code&gt;コード&lt;/code&gt;</code></pre>
+              <code>コード</code>
+            </li>
+            <li>
+              <h4 id="#img">imgタグ</h4>
+              <p>HTMLの画像要素です。以下のように記述します。</p>
+              <pre><code>&lt;img src="画像のURL" alt="画像の説明" title="画像のタイトル"&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#kbd">kbdタグ</h4>
+              <p>HTMLのテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;kbd&gt;テキスト&lt;/kbd&gt;</code></pre>
+              <kbd>テキスト</kbd>
+            </li>
+            <li>
+              <h4 id="#pre">preタグ</h4>
+              <p>HTMLの整形済みテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;pre&gt;整形済みテキスト&lt;/pre&gt;</code></pre>
+              <pre>整形済みテキスト</pre>
+            </li>
+            <li>
+              <h4 id="#q">qタグ</h4>
+              <p>HTMLの引用要素です。以下のように記述します。</p>
+              <pre><code>&lt;q&gt;引用&lt;/q&gt;</code></pre>
+              <q>引用</q>
+            </li>
+            <li>
+              <h4 id="#samp">sampタグ</h4>
+              <p>HTMLのサンプルテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;samp&gt;サンプルテキスト&lt;/samp&gt;</code></pre>
+              <samp>サンプルテキスト</samp>
+            </li>
+            <li>
+              <h4 id="#var">varタグ</h4>
+              <p>HTMLの変数要素です。以下のように記述します。</p>
+              <pre><code>&lt;var&gt;変数&lt;/var&gt;</code></pre>
+              <var>変数</var>
+            </li>
+            <li>
+              <h4 id="#abbr">abbrタグ</h4>
+              <p>HTMLの省略形要素です。以下のように記述します。</p>
+              <pre><code>&lt;abbr title="省略形の意味"&gt;省略形&lt;/abbr&gt;</code></pre>
+              <abbr title="省略形の意味">省略形</abbr>
+            </li>
+            <li>
+              <h4 id="#bdo">bdoタグ</h4>
+              <p>HTMLのテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;bdo dir="rtl"&gt;テキスト&lt;/bdo&gt;</code></pre>
+              <bdo dir="rtl">テキスト</bdo>
+            </li>
+            <li>
+              <h4 id="#del">delタグ</h4>
+              <p>HTMLの削除済みテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;del&gt;削除済みテキスト&lt;/del&gt;</code></pre>
+              <del>削除済みテキスト</del>
+            </li>
+            <li>
+              <h4 id="#ins">insタグ</h4>
+              <p>HTMLの挿入済みテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;ins&gt;挿入済みテキスト&lt;/ins&gt;</code></pre>
+              <ins>挿入済みテキスト</ins>
+            </li>
+            <li>
+              <h4 id="#dfn">dfnタグ</h4>
+              <p>HTMLの定義済みテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;dfn&gt;定義済みテキスト&lt;/dfn&gt;</code></pre>
+              <dfn>定義済みテキスト</dfn>
+            </li>
+            <li>
+              <h4 id="#mark">markタグ</h4>
+              <p>HTMLのマーク要素です。以下のように記述します。</p>
+              <pre><code>&lt;mark&gt;マーク&lt;/mark&gt;</code></pre>
+              <mark>マーク</mark>
+            </li>
+            <li>
+              <h4 id="#ruby">rubyタグ</h4>
+              <p>HTMLのルビ要素です。以下のように記述します。</p>
+              <pre><code>&lt;ruby&gt;漢字&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ふりがな&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;</code></pre>
+              <ruby>漢字<rp>(</rp><rt>ふりがな</rt><rp>)</rp></ruby>
+            </li>
+            <li>
+              <h4 id="#rt">rtタグ</h4>
+              <p>HTMLのルビテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;rt&gt;ルビテキスト&lt;/rt&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#rp">rpタグ</h4>
+              <p>HTMLのルビの括弧要素です。以下のように記述します。</p>
+              <pre><code>&lt;rp&gt;(&lt;/rp&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#bdi">bdiタグ</h4>
+              <p>HTMLのテキスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;bdi&gt;テキスト&lt;/bdi&gt;</code></pre>
+              <bdi>テキスト</bdi>
+            </li>
+            <li>
+              <h4 id="#wbr">wbrタグ</h4>
+              <p>HTMLの改行要素です。以下のように記述します。</p>
+              <pre><code>テキスト&lt;wbr&gt;テキスト</code></pre>
+              テキスト<wbr />テキスト
+            </li>
+            <li>
+              <h4 id="#template">templateタグ</h4>
+              <p>HTMLのテンプレート要素です。以下のように記述します。</p>
+              <pre><code>&lt;template&gt;テンプレート&lt;/template&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#canvas">canvasタグ</h4>
+              <p>HTMLのキャンバス要素です。以下のように記述します。</p>
+              <pre><code>&lt;canvas&gt;キャンバス&lt;/canvas&gt;</code></pre>
+              <canvas>キャンバス</canvas>
+            </li>
+            <li>
+              <h4 id="#figure">figureタグ</h4>
+              <p>HTMLの図要素です。以下のように記述します。</p>
+              <pre><code>&lt;figure&gt;図&lt;/figure&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#figcaption">figcaptionタグ</h4>
+              <p>HTMLの図のキャプション要素です。以下のように記述します。</p>
+              <pre><code>&lt;figcaption&gt;図のキャプション&lt;/figcaption&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#audio">audioタグ</h4>
+              <p>HTMLのオーディオ要素です。以下のように記述します。</p>
+              <pre><code>&lt;audio src="音声のURL"&gt;&lt;/audio&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#video">videoタグ</h4>
+              <p>HTMLのビデオ要素です。以下のように記述します。</p>
+              <pre><code>&lt;video src="動画のURL"&gt;&lt;/video&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#source">sourceタグ</h4>
+              <p>HTMLのメディア要素です。以下のように記述します。</p>
+              <pre><code>&lt;source src="URL"&gt;&lt;/source&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#embed">embedタグ</h4>
+              <p>HTMLの埋め込み要素です。以下のように記述します。</p>
+              <pre><code>&lt;embed src="URL"&gt;&lt;/embed&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="track">trackタグ</h4>
+              <p>HTMLのテキストトラック要素です。</p>
+            </li>
+            <li>
+              <h4 id="map">mapタグ</h4>
+              <p>HTMLの画像マップ要素です。以下のように記述します。</p>
+              <pre><code>&lt;map name="マップ名"&gt;画像マップ&lt;/map&gt;</code></pre>
+              <map name="マップ名"> 画像マップの内容 </map>
+            </li>
+            <li>
+              <h4 id="area">areaタグ</h4>
+              <p>HTMLの画像マップの領域要素です。</p>
+            </li>
+            <li>
+              <h4 id="#nav">navタグ</h4>
+              <p>HTMLのナビゲーション要素です。以下のように記述します。</p>
+              <pre><code>&lt;nav&gt;ナビゲーション&lt;/nav&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#menu">menuタグ</h4>
+              <p>HTMLのメニュー要素です。以下のように記述します。</p>
+              <pre><code>&lt;menu&gt;メニュー&lt;/menu&gt;</code></pre>
+              <menu>メニュー</menu>
+            </li>
+            <li>
+              <h4 id="#details">detailsタグ</h4>
+              <p>HTMLの詳細要素です。以下のように記述します。</p>
+              <pre><code>&lt;details&gt;詳細&lt;/details&gt;</code></pre>
+              <details>詳細</details>
+            </li>
+            <li>
+              <h4 id="summary">summaryタグ</h4>
+              <p>HTMLの詳細の見出し要素です。</p>
+              <details>
+                <summary>詳細の見出し</summary>
+                詳細の内容
+              </details>
+            </li>
+            <li>
+              <h4 id="command">commandタグ</h4>
+              <p>HTMLのコマンド要素です。</p>
+              <button tabindex="0" accesskey="C">コマンド</button>
+            </li>
+            <li>
+              <h4 id="#dialog">dialogタグ</h4>
+              <p>HTMLのダイアログ要素です。以下のように記述します。</p>
+              <pre><code>&lt;dialog&gt;ダイアログ&lt;/dialog&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="font">fontタグ</h4>
+              <p>HTMLのフォント要素です。</p>
+              <span style="font-family: Arial, sans-serif">フォント</span>
+            </li>
+            <li>
+              <h4 id="center">centerタグ</h4>
+              <p>HTMLの中央揃え要素です。</p>
+              <p style="text-align: center">中央揃え</p>
+            </li>
+            <li>
+              <h4 id="big">bigタグ</h4>
+              <p>HTMLの大きな文字要素です。</p>
+              <span style="font-size: 1.2em">大きな文字</span>
+            </li>
+            <li>
+              <h4 id="tt">ttタグ</h4>
+              <p>HTMLの等幅フォント要素です。</p>
+              <code>等幅フォント</code>
+            </li>
+            <li>
+              <h4 id="#s">sタグ</h4>
+              <p>HTMLの打ち消し線要素です。以下のように記述します。</p>
+              <pre><code>&lt;s&gt;打ち消し線&lt;/s&gt;</code></pre>
+              <s>打ち消し線</s>
+            </li>
+            <li>
+              <h4 id="strike">strikeタグ</h4>
+              <p>HTMLの打ち消し線要素です。</p>
+              <del>打ち消し線</del>
+            </li>
+            <li>
+              <h4 id="#u">uタグ</h4>
+              <p>HTMLの下線要素です。以下のように記述します。</p>
+              <pre><code>&lt;u&gt;下線&lt;/u&gt;</code></pre>
+              <u>下線</u>
+            </li>
+            <li>
+              <h4 id="nobr">nobrタグ</h4>
+              <p>HTMLの改行禁止要素です。</p>
+              <span style="white-space: nowrap">改行禁止</span>
+            </li>
+            <li>
+              <h4 id="blink">blinkタグ</h4>
+              <p>HTMLの点滅要素です。</p>
+              <p style="text-decoration: blink">このテキストは点滅します。</p>
+            </li>
+            <li>
+              <h4 id="#marquee">marqueeタグ</h4>
+              <p>HTMLのスクロール要素です。以下のように記述します。</p>
+              <pre><code>&lt;marquee&gt;スクロール&lt;/marquee&gt;</code></pre>
+              <marquee>スクロール</marquee>
+            </li>
+            <li>
+              <h4 id="#multicol">multicolタグ</h4>
+              <p>HTMLの複数列要素です。以下のように記述します。</p>
+              <pre><code>&lt;multicol&gt;複数列&lt;/multicol&gt;</code></pre>
+              <multicol>複数列</multicol>
+            </li>
+            <li>
+              <h4 id="#spacer">spacerタグ</h4>
+              <p>HTMLのスペーサー要素です。以下のように記述します。</p>
+              <pre><code>&lt;spacer&gt;スペーサー&lt;/spacer&gt;</code></pre>
+              <spacer>スペーサー</spacer>
+            </li>
+            <li>
+              <h4 id="#isindex">isindexタグ</h4>
+              <p>HTMLの検索要素です。以下のように記述します。</p>
+              <pre><code>&lt;isindex&gt;検索&lt;/isindex&gt;</code></pre>
+              <isindex>検索</isindex>
+            </li>
+            <li>
+              <h4 id="#basefont">basefontタグ</h4>
+              <p>HTMLの基本フォント要素です。以下のように記述します。</p>
+              <pre><code>&lt;basefont&gt;基本フォント&lt;/basefont&gt;</code></pre>
+              <basefont>基本フォント</basefont>
+            </li>
+            <li>
+              <h4 id="#keygen">keygenタグ</h4>
+              <p>HTMLのキー生成要素です。以下のように記述します。</p>
+              <pre><code>&lt;keygen&gt;キー生成&lt;/keygen&gt;</code></pre>
+              <keygen>キー生成</keygen>
+            </li>
+            <li>
+              <h4 id="#bgsound">bgsoundタグ</h4>
+              <p>HTMLのバックグラウンドサウンド要素です。以下のように記述します。</p>
+              <pre><code>&lt;bgsound&gt;バックグラウンドサウンド&lt;/bgsound&gt;</code></pre>
+              <bgsound>バックグラウンドサウンド</bgsound>
+            </li>
+            <li>
+              <h4 id="#command">commandタグ</h4>
+              <p>HTMLのコマンド要素です。以下のように記述します。</p>
+              <pre><code>&lt;command&gt;コマンド&lt;/command&gt;</code></pre>
+              <command>コマンド</command>
+            </li>
+            <li>
+              <h4 id="#menuitem">menuitemタグ</h4>
+              <p>HTMLのメニューアイテム要素です。以下のように記述します。</p>
+              <pre><code>&lt;menuitem&gt;メニューアイテム&lt;/menuitem&gt;</code></pre>
+              <menuitem>メニューアイテム</menuitem>
+            </li>
+            <li>
+              <h4 id="#applet">appletタグ</h4>
+              <p>HTMLのアプレット要素です。以下のように記述します。</p>
+              <pre><code>&lt;applet&gt;アプレット&lt;/applet&gt;</code></pre>
+              <applet>アプレット</applet>
+            </li>
+            <li>
+              <h4 id="#acronym">acronymタグ</h4>
+              <p>HTMLのアクロニム要素です。以下のように記述します。</p>
+              <pre><code>&lt;acronym&gt;アクロニム&lt;/acronym&gt;</code></pre>
+              <acronym>アクロニム</acronym>
+            </li>
+            <li>
+              <h4 id="#dir">dirタグ</h4>
+              <p>HTMLのディレクトリリスト要素です。以下のように記述します。</p>
+              <pre><code>&lt;dir&gt;ディレクトリリスト&lt;/dir&gt;</code></pre>
+              <dir>ディレクトリリスト</dir>
+            </li>
+            <li>
+              <h4 id="#frame">frameタグ</h4>
+              <p>HTMLのフレーム要素です。以下のように記述します。</p>
+              <pre><code>&lt;frame&gt;フレーム&lt;/frame&gt;</code></pre>
+              <frame>フレーム</frame>
+            </li>
+            <li>
+              <h4 id="#frameset">framesetタグ</h4>
+              <p>HTMLのフレームセット要素です。以下のように記述します。</p>
+              <pre><code>&lt;frameset&gt;フレームセット&lt;/frameset&gt;</code></pre>
+              <frameset>フレームセット</frameset>
+            </li>
+            <li>
+              <h4 id="#noframes">noframesタグ</h4>
+              <p>HTMLのフレームセット非対応要素です。以下のように記述します。</p>
+              <pre><code>&lt;noframes&gt;フレームセット非対応&lt;/noframes&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#iframe">iframeタグ</h4>
+              <p>HTMLのインラインフレーム要素です。以下のように記述します。</p>
+              <pre><code>&lt;iframe&gt;インラインフレーム&lt;/iframe&gt;</code></pre>
+              <iframe>インラインフレーム</iframe>
+            </li>
+            <li>
+              <h4 id="#noembed">noembedタグ</h4>
+              <p>HTMLの埋め込み非対応要素です。以下のように記述します。</p>
+              <pre><code>&lt;noembed&gt;埋め込み非対応&lt;/noembed&gt;</code></pre>
+            </li>
+            <li>
+              <h4 id="#noscript">noscriptタグ</h4>
+              <p>HTMLのスクリプト非対応要素です。以下のように記述します。</p>
+              <pre><code>&lt;noscript&gt;スクリプト非対応&lt;/noscript&gt;</code></pre>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <footer>Copy right &copy; Kameoka, ALL Rights Reseved.</footer>
+  </body>
+</html>
