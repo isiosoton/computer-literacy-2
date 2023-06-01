@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* *はワイルドカード。全てのタグに適用される */
+* {
+  /* フォントを指定するプロパティ */
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, "メイリオ";
+}
+
+body {
+  /* 文字サイズを変更するプロパティ */
+  font-size: 16px;
+}
+
+h1 {
+  /* セレクタで指定した要素の背景色を指定するプロパティ */
+  background-color: coral;
+}
+
+p {
+  /* 文字色を指定するプロパティ */
+  /* 色名で指定 */
+  /* color: red; */
+  /* RGB値で指定 */
+  color: #ff0000;
+
+  /* 透明度がある色も指定可能。RGBa */
+  color: rgba(98, 17, 173, 0.425);
+
+  /* 行の高さを指定する。 */
+  /* サイズ指定の単位.... */
+  /* px: 絶対値 */
+  /* em, rem, %: 相対値 */
+  line-height: 48px;
+  /* 水平方向の配置を指定するプロパティ */
+  text-align: center;
+}
+
+span {
+  /* 両端ぞろえ */
+  text-align: justify;
+}
+
+div {
+  /* 背景画像を指定するプロパティ */
+  background-image: url(../../lesson_04/media/animation.gif);
+
+  /* 拝啓画像の繰り返し制御 */
+  background-repeat: no-repeat;
+
+  /* 背景画像のサイズ指定 */
+  background-size: 100%;
+}
+
+ul {
+  /* 行頭記号の制御 */
+  list-style: none;
+}
