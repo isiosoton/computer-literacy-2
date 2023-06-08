@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* CSSファイルが正しくリンクできているか確認 */
+/* 全称セレクタ　(すべての要素に適用される) */
+/* * {
+  color: cadetblue;
+} */
+
+/* 要素セレクタ　(HTMLタグを指定する方法) */
+ul {
+  list-style: none;
+}
+
+table {
+  /* 罫線を表示するプロパティ */
+  /* border: 1px solid red; */
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+}
+
+th {
+  border: 4px double blue;
+}
+
+td {
+  border: 1px dashed green;
+
+  /* 角を丸めるプロパティ */
+  border-radius: 8px;
+}
+
+/* IDセレクタ */
+#top {
+  color: darkmagenta;
+}
+
+#github-copilot {
+  font-size: 1.5rem;
+  border: 2px dotted darkslategray;
+}
+
+/* クラスセレクタ */
+.green {
+  color: green;
+}
+
+/* 属性セレクタ */
+/* a[href] {
+  color: black;
+  text-decoration: none;
+} */
+
+p[class="green"] {
+  border: 2px solid blue;
+}
+
+/* 疑似クラスセレクタ */
+/* HTMLの中には含まれな状態情報で要素を選択できる */
+/* 未訪問のリンク */
+a:link {
+  color: red;
+}
+
+/* 訪問済みのリンク */
+a:visited {
+  color: darkgoldenrod;
+}
+
+/* ポインタが載っている状態 */
+a:hover {
+  font-size: 4rem;
+}
+
+h2:hover {
+  border: 2px solid black;
+}
+
+/* 同階層の偶数番目を指定する疑似クラス */
+tr:nth-child(even) {
+  background-color: pink;
+}
+
+/* 同階層の奇数番目を指定する疑似クラス */
+tr:nth-child(odd) {
+  background-color: gold;
+}
+
+/* An+Bのような関数記法で位置指定する疑似クラス */
+tr:nth-child(3n + 1) {
+  background-color: green;
+}
+
+/* 同じ階層内での最初の要素 */
+tr:first-child {
+  font-size: 1.3rem;
+}
+
+/* 同じ階層内での最後の要素 */
+tr:last-child {
+  font-size: 0.5rem;
+}
+
+/* 疑似要素セレクタ */
+p::first-letter {
+  font-size: 2rem;
+}
+
+/* セレクタ結合子 */
+/* 子孫結合子 */
+div li {
+  text-align: right;
+}
+
+/* 子結合子 */
+div > ul > li > .blue {
+  color: blue;
+}
+
+/* 隣接兄弟結合子 */
+p + p {
+  text-align: center;
+}
+
+/* 一般兄弟結合子 */
+h3 ~ p {
+  font-family: serif;
+}
