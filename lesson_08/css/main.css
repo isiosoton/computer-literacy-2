@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+#menu > ul {
+  /* 行頭記号 */
+  list-style: none;
+  /* padding調整 */
+  /* 4方向全て */
+  padding: 0px;
+  /* 上下 左右 */
+  /* padding: 0px 0px; */
+  /* 上 左右 下 */
+  /* padding: 0px 0px 0px; */
+  /* 上 右 下 左 */
+  /* padding: 0px 0px 0px 0px; */
+}
+
+#menu > ul > li {
+  /* ブロック要素の表示をインライン要素のように変更する */
+  display: inline;
+  /* マージン */
+  margin: 0 8px 0 0;
+  /* ボーダー */
+  border: 1px solid darkblue;
+  /* ボーダーの角を丸める */
+  border-radius: 4px;
+  /* パディング */
+  padding: 4px;
+  background: linear-gradient(white, gray);
+}
+
+#menu a {
+  /* テキスト装飾を指定 */
+  text-decoration: none;
+}
+
+.container {
+  /* 直下の要素をフレックスボックスにする */
+  display: flex;
+  /* 横(row) or 縦 (column) */
+  /* flex-direction: column; */
+  /* flex-direction: row; */
+
+  /* 単一行(nowrap) or 複数行(wrap) */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+
+  /* ↑2つのプロパティを一括指定 */
+  flex-flow: row nowrap;
+
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+
+  /* 垂直方向の寄せと間隔 */
+  /* align-content: space-evenly; */
+}
+
+main {
+  background-color: aqua;
+  /* flexボックスを並べる順番(デフォルト値：0) */
+  order: 2;
+
+  /* flex-grow flex-shrink flex-basis */
+  /* 伸長係数 縮小係数 初期サイズ */
+  flex: 0 1 200px;
+}
+
+aside {
+  background-color: chocolate;
+  order: 1;
+
+  flex: 0 1 200px;
+}
