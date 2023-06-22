@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- タイトル -->
+    <title>第9回 HHTMLフォーム</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="top">コンピュータリテラシーⅡ</h1>
+      <nav id="menu">
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">タグリファレンス</a></li>
+          <li><a href="#">問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>HTMLフォーム</h2>
+        <!-- サーバーにデータを送信したい場合 postメソッド -->
+        <!-- formのデータに由来する別のデータを -->
+        <!-- getは暗号化されず、postは暗号化される。その仕様があるためpostを用いる -->
+        <form action="#" method="post">
+          <!-- 1行のテキスト入力フィールド -->
+          <div>
+            <!-- forの属性値にはinputタグのid属性値を指定する -->
+            <label for="surname">姓：</label>
+            <input type="text" id="surname" name="lastname" placeholder="ここには姓を入れてね" required />
+
+            <label>
+              名：
+              <input type="text" required />
+            </label>
+          </div>
+          <!-- パスワード入慮億フィールド -->
+          <div>
+            <label for="password">パスワード：</label>
+            <input type="password" id="password" name="password" />
+          </div>
+
+          <!-- チェックボックス -->
+          <!-- サーバーに送信したい値はvalue属性で指定する -->
+          <div>
+            <input type="checkbox" id="agreement" name="agreement" />
+            <label for="agreement">プライバシーポリシーに同意する</label>
+          </div>
+
+          <!-- ラジオボタン -->
+          <!-- グループ化したい選択肢には共通のname属性値を指定する -->
+          <div>
+            <input type="radio" name="sex" id="female" value="female" />
+            <label for="female">女性</label>
+            <input type="radio" name="sex" id="male" value="male" />
+            <label for="male">男性</label>
+            <input type="radio" name="sex" id="other" value="other" />
+            <label for="other">その他</label>
+            <input type="radio" name="sex" id="none" value="none" />
+            <label for="none">指定しない</label>
+          </div>
+
+          <div>
+            <label for="requests">要望：</label>
+            <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+          </div>
+
+          <!-- メールアドレス -->
+          <div>
+            <label
+              >メールアドレス：
+              <input type="email" name="email" id="email" />
+            </label>
+          </div>
+
+          <!-- 日付関連 -->
+          <div>
+            <label>
+              誕生日：
+              <input type="date" name="date" />
+            </label>
+          </div>
+
+          <!-- メールアドレス -->
+          <div>
+            <label>
+              好きな色
+              <input type="color" name="" />
+            </label>
+          </div>
+
+          <!-- 電話番号 -->
+          <div>
+            <label>
+              電話番号：
+              <input type="tel" name="tel" />
+            </label>
+          </div>
+
+          <!-- ファイル -->
+          <div>
+            <label>
+              アップロードファイル：
+              <input type="file" name="file" />
+            </label>
+          </div>
+
+          <!-- 送信ボタン -->
+          <div>
+            <input type="submit" value="送信する" />
+            <input type="reset" value="リセット" />
+            <input type="button" value="このボタン押せるぞ" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>&copy;</footer>
+  </body>
+</html>
