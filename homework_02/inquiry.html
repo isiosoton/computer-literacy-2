@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ファイルの文字コード -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページ作成者 -->
+    <meta name="auther" content="Kameoka Kentaro" />
+    <!-- ページ内容を表すキーワード　3つぐらい -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- タイトル -->
+    <title>第1回 課題</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTMLの講義</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">ホーム</a></li>
+          <li><a href="tags.html">タグリファレンス</a></li>
+          <li><a href="inquiry.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h2>お問い合わせ</h2>
+        <form action="post.html" method="post">
+          <div>
+            <div><label for="name">お名前</label></div>
+            <div><input type="text" name="name" id="name" value="" /></div>
+          </div>
+          <div>
+            <div><label for="email">メールアドレス</label></div>
+            <div><input type="email" name="email" id="email" /></div>
+          </div>
+          <div>
+            <div><label for="inquiry">お問い合わせ内容</label></div>
+            <div><textarea name="inquiry" id="inquiry" cols="30" rows="10" accesskey="q" tabindex="3">お問い合わせ内容</textarea></div>
+          </div>
+          <div>
+            <input type="submit" value="送信" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>Copy right &copy; Kameoka, ALL Rights Reseved.</p>
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img height="31" width="88" style="border: 0" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="正当なCSSです!" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
