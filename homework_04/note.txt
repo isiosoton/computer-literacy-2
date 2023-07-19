@@ -1,0 +1,5 @@
+curl -X GET https://api.odpt.org/api/v4/odpt:BusTimetable?odpt:operator=odpt.Operator:NishiTokyoBus&acl:consumerKey=2168f271f8ae9d9529f935a1e4595fa0974f26540db8d2222ce80ea698e76093
+curl -X GET https://api.odpt.org/api/v4/odpt:Train?acl:consumerKey=2168f271f8ae9d9529f935a1e4595fa0974f26540db8d2222ce80ea698e76093
+/api/v4/odpt:Bus?acl:consumerKey=string
+curl -X GET https://api.odpt.org/api/v4/odpt:BusTimetable?odpt:operator=odpt.Operator:NishiTokyoBus&acl:consumerKey=
+curl GET https://api.odpt.org/api/v4/odpt:BusTimetable?odpt:operator=odpt.Operator:NishiTokyoBus&acl:consumerKey=2168f271f8ae9d9529f935a1e4595fa0974f26540db8d2222ce80ea698e76093
