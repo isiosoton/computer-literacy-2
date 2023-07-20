@@ -1,28 +1,5 @@
 const soudai_busspot_list = ["創価大東京富士美術館（正門）", "創価大学栄光門"];
 
-async function callApi() {
-  // const API_Key = process.env.ODPT_ACCESS_TOKEN;
-  const API_Key = read_env();
-  //   console.log(API_Key);
-  //   バス時刻表
-  //   const res = await fetch(`https://api.odpt.org/api/v4/odpt:BusTimetable?odpt:operator=odpt.Operator:NishiTokyoBus&acl:consumerKey=${API_Key}`);
-  //   バス停情報
-  const res = await fetch(`https://api.odpt.org/api/v4/odpt:BusstopPole?odpt:operator=odpt.Operator:NishiTokyoBus&acl:consumerKey=${API_Key}`);
-  const users = await res.json();
-  const buspole_list = await buspole_data(users);
-  return buspole_list;
-}
-
-function buspole_data(json_data) {
-  buspole_list = [];
-  json_data.forEach((buspole, index) => {
-    if (buspole["dc:title"].match(/創価/)) {
-      buspole_list.push(buspole);
-    }
-  });
-  return buspole_list;
-}
-
 // jsonファイルをダウンロードする関数
 function downloadJson() {
   const request = new XMLHttpRequest();

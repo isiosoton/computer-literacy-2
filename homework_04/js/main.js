@@ -1,7 +1,9 @@
 function succession() {
   // request_busstop_time();
-  const busstopdata = callApi();
+  const busstopdata = read_bustime();
   console.log(busstopdata);
+  // const buspoledata = read_buspole();
+  // console.log(buspoledata);
   // downloadJson();
 
   // envdata = require("../.env");
